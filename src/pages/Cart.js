@@ -1,181 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-shopper</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js"
-      async
-      integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="bg-white w-full">
-      <div class="header h-16 bg-gray-900 flex items-center">
-        <div class="logo w-1/5 h-16 ml-10">
-          <img
-            class="w-28 h-16 object-contain"
-            src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
-            alt="eshopper-logo"
-          />
-        </div>
-        <input
-          class="
-            h-9
-            w-30
-            text-white
-            bg-gray-800
-            border border-gray-500 border-opacity-75
-            rounded-l-xl
-            ml-6
-            p-1.5
-            text-sm
-            focus:outline-none
-            placeholder-white
-          "
-          id="search"
-          type="text"
-          placeholder="Search..."
-        />
-        <div
-          class="
-            categories
-            h-9
-            w-30
-            bg-gray-800
-            border border-gray-500 border-opacity-75
-            px-3
-            text-white
-            flex
-            items-center
-          "
-        >
-          categories
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 ml-1 mt-1"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          class="
-            search-icon
-            h-9
-            w-10
-            bg-yellow-500
-            rounded-r-xl
-            flex
-            justify-center
-            items-center
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </div>
-        <!-- Right Icons -->
-        <div
-          class="
-            icons
-            text-white
-            flex
-            items-center
-            ml-auto
-            mr-8
-            w-48
-            h-16
-            justify-around
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-          <div
-            class="
-              cart-icon
-              h-10
-              w-10
-              bg-yellow-500
-              flex
-              justify-center
-              items-center
-              rounded-xl
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-gray-600"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-            />
-          </svg>
-          <svg class="rounded h-12 w-12" data-jdenticon-value="Ankit"></svg>
-        </div>
-      </div>
+import React from "react";
+import Header from "../layouts/Header";
 
+function Cart() {
+  return (
+    <div>
+      <Header />
+      
       <div class="main h-screen flex">
-        <div
-          class="main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6"
-        >
+        <div class="main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6">
           <div class="sidebar-categories">
             <div
               class="
@@ -306,17 +138,16 @@
                 mb-3
               "
             >
-              <span class="w-8"
-                ><svg
+              <span class="w-8">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  /></svg
-              ></span>
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+              </span>
               <span>Sell on Amazon</span>
             </div>
 
@@ -361,6 +192,77 @@
             <span class="w-10"></span>
           </div>
           <div class="cart-items mt-5">
+            <div class="cart-item flex items-center pb-4 border-b">
+              <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
+                <img
+                  class="w-full h-full object-contain"
+                  src="https://www.bhphotovideo.com/images/images2500x2500/apple_myd92ll_a_13_3_macbook_pro_with_1604810.jpg"
+                  alt="product_img"
+                />
+              </div>
+              <div class="cart-item-details flex-grow">
+                <div class="cart-item-title font-bold text-sm text-gray-600">
+                  Apple MacBook Pro 13,3
+                </div>
+                <div class="cart-item-brand text-sm text-gray-400">Apple</div>
+              </div>
+              <div class="cart-item-counter w-48 flex items-center">
+                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 12H6"
+                    />
+                  </svg>
+                </div>
+                <h4 class="text-gray-400 mx-3">1</h4>
+                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+                $1,499.50
+              </div>
+              <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            {/* ------------------------------------------------------------ */}
 
             <div class="cart-item flex items-center pb-4 border-b">
               <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
@@ -415,76 +317,39 @@
                 $1,499.50
               </div>
               <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </div>
             </div>
+          </div>
 
-            <!-- -------------- -->
-            <div class="cart-item flex items-center pb-4 border-b">
-              <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
-                <img
-                  class="w-full h-full object-contain"
-                  src="https://www.bhphotovideo.com/images/images2500x2500/apple_myd92ll_a_13_3_macbook_pro_with_1604810.jpg"
-                  alt="product_img"
-                />
-              </div>
-              <div class="cart-item-details flex-grow">
-                <div class="cart-item-title font-bold text-sm text-gray-600">
-                  Apple MacBook Pro 13,3
-                </div>
-                <div class="cart-item-brand text-sm text-gray-400">Apple</div>
-              </div>
-              <div class="cart-item-counter w-48 flex items-center">
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M18 12H6"
-                    />
-                  </svg>
-                </div>
-                <h4 class="text-gray-400 mx-3">1</h4>
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="cart-item-total-cost w-48 font-bold text-gray-400">
-                $1,499.50
-              </div>
-              <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+          <div class="complete-order flex justify-end mt-10">
+            <div class="total-cost mr-7">
+              <h2 class="text-gray-400">Total Cost</h2>
+              <div class="total-cost-number text-gray-600 font-bold text-3xl">
+                $1700.00
               </div>
             </div>
-            
-
+            <div class="complete-order-button w-56 flex items-center justify-center bg-yellow-500 rounded text-white cursor-pointer hover:bg-yellow-600">
+              Complete Order
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  );
+}
+
+export default Cart;

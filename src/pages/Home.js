@@ -1,180 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-shopper</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js"
-      async
-      integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="bg-white w-full">
-      <div class="header h-16 bg-gray-900 flex items-center">
-        <div class="logo w-1/5 h-16 ml-10">
-          <img
-            class="w-28 h-16 object-contain"
-            src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
-            alt="eshopper-logo"
-          />
-        </div>
-        <input
-          class="
-            h-9
-            w-30
-            text-white
-            bg-gray-800
-            border border-gray-500 border-opacity-75
-            rounded-l-xl
-            ml-6
-            p-1.5
-            text-sm
-            focus:outline-none
-            placeholder-white
-          "
-          id="search"
-          type="text"
-          placeholder="Search..."
-        />
-        <div
-          class="
-            categories
-            h-9
-            w-30
-            bg-gray-800
-            border border-gray-500 border-opacity-75
-            px-3
-            text-white
-            flex
-            items-center
-          "
-        >
-          categories
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 ml-1 mt-1"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          class="
-            search-icon
-            h-9
-            w-10
-            bg-yellow-500
-            rounded-r-xl
-            flex
-            justify-center
-            items-center
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </div>
-        <!-- Right Icons -->
-        <div
-          class="
-            icons
-            text-white
-            flex
-            items-center
-            ml-auto
-            mr-8
-            w-48
-            h-16
-            justify-around
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-          <div
-            class="
-              cart-icon
-              h-10
-              w-10
-              bg-yellow-500
-              flex
-              justify-center
-              items-center
-              rounded-xl
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-gray-600"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-            />
-          </svg>
-          <svg class="rounded h-12 w-12" data-jdenticon-value="Ankit"></svg>
-        </div>
-      </div>
+import React from "react";
+import Header from "../layouts/Header";
+import "./Home.css";
 
+function Home() {
+  return (
+    <div>
+      <Header />
+      
       <div class="main h-screen flex">
         <div
-          class="main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6"
+          class="
+            hidden
+            md:block
+            main-sidebar
+            border-t-2 border-gray-700
+            w-1/5
+            bg-gray-900
+            p-6
+          "
         >
           <div class="sidebar-categories">
             <div
@@ -306,17 +149,16 @@
                 mb-3
               "
             >
-              <span class="w-8"
-                ><svg
+              <span class="w-8">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  /></svg
-              ></span>
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+              </span>
               <span>Sell on Amazon</span>
             </div>
 
@@ -371,7 +213,7 @@
               <h4 class="text-bold text-yellow-500">Browse Products</h4>
             </div>
           </div>
-          <!-- Popular Categories -->
+          {/* Popular Categories */}
           <div class="main-section-categories mt-10">
             <h1
               class="
@@ -386,16 +228,13 @@
               <svg
                 class="h-6 w-6 text-yellow-400"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
-                <path
-                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                />
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             </h1>
-            <div class="categories mt-5 flex">
+            <div class="categories mt-5 flex flex-wrap w-96 md:w-full">
               <div
                 class="
                   icon-desktop
@@ -411,7 +250,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -424,7 +262,6 @@
                   />
                 </svg>
               </div>
-
               <div
                 class="
                   icon-gift
@@ -441,7 +278,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -470,7 +306,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -499,7 +334,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -528,7 +362,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -563,7 +396,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -592,7 +424,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -621,7 +452,6 @@
                 <svg
                   class="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -642,7 +472,6 @@
               <svg
                 class="h-7 w-7 text-yellow-500"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -654,12 +483,51 @@
               </svg>
             </h1>
             <div class="main-section-products flex">
-
               <div class="main-product">
                 <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
                   <img
                     class="w-full h-full object-contain"
                     src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                    alt="product_img"
+                  />
+                </div>
+                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
+                  Nintendo Switch(2020)
+                </div>
+                <div class="product-make text-green-700 font-bold my-1">
+                  Nintendo
+                </div>
+                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
+                <div class="product-price font-bold text-gray-700 text-lg">
+                  $359
+                </div>
+                <div
+                  class="
+                    add-to-cart
+                    flex
+                    items-center
+                    justify-center
+                    h-8
+                    w-28
+                    bg-yellow-500
+                    text-white
+                    rounded
+                    text-md
+                    cursor-pointer
+                    hover:bg-yellow-600
+                    mt-2
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+
+              <div class="main-product ml-5">
+                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
+                  <img
+                    class="w-full h-full object-contain"
+                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                    alt="product_img"
                   />
                 </div>
                 <div class="product-name text-gray-700 font-bold mt-2 text-sm">
@@ -679,6 +547,7 @@
                   <img
                     class="w-full h-full object-contain"
                     src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                    alt="product_img"
                   />
                 </div>
                 <div class="product-name text-gray-700 font-bold mt-2 text-sm">
@@ -698,6 +567,7 @@
                   <img
                     class="w-full h-full object-contain"
                     src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                    alt="product_img"
                   />
                 </div>
                 <div class="product-name text-gray-700 font-bold mt-2 text-sm">
@@ -711,30 +581,12 @@
                   $359
                 </div>
               </div>
-
-              <div class="main-product ml-5">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  Nintendo Switch(2020)
-                </div>
-                <div class="product-make text-green-700 font-bold my-1">
-                  Nintendo
-                </div>
-                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $359
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  );
+}
+
+export default Home;
