@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -6,12 +7,15 @@ function Header() {
       <div class="bg-white w-full">
         <div class="header h-16 bg-gray-900 flex items-center">
           <div class="logo w-1/5 h-16 ml-10">
-            <img
-              class="w-28 h-16 object-contain"
-              src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
-              alt="eshopper-logo"
-            />
+            <Link to="/">
+              <img
+                class="w-28 h-16 object-contain"
+                src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
+                alt="eshopper-logo"
+              />
+            </Link>
           </div>
+
           <input
             class="
             h-9
@@ -113,7 +117,7 @@ function Header() {
               />
             </svg>
             {/* Cart Icons */}
-            <a href="cart.html">
+            <Link to="/cart">
               <div
                 class="
                 cart-icon
@@ -160,7 +164,7 @@ function Header() {
                   />
                 </svg>
               </div>
-            </a>
+            </Link>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"

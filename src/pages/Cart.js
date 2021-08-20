@@ -6,11 +6,11 @@ function Cart() {
     <div>
       <Header />
       
-      <div class="main h-screen flex">
-        <div class="main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6">
-          <div class="sidebar-categories">
+      <div className="main h-screen flex">
+        <div className="main-sidebar border-t-2 border-gray-700 w-1/5 bg-gray-900 p-6">
+          <div className="sidebar-categories">
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-yellow-500
                 cursor-pointer
@@ -22,10 +22,10 @@ function Cart() {
                 rounded-lg
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -41,7 +41,7 @@ function Cart() {
               <span>Categories</span>
             </div>
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -50,12 +50,12 @@ function Cart() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Echo and Alexa</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -64,12 +64,12 @@ function Cart() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Kindle</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -78,12 +78,12 @@ function Cart() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Books</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -92,12 +92,12 @@ function Cart() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Electronics</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -106,12 +106,12 @@ function Cart() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Home and Garden</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -121,12 +121,12 @@ function Cart() {
                 mb-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Fashion</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -138,10 +138,10 @@ function Cart() {
                 mb-3
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -152,7 +152,7 @@ function Cart() {
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -163,10 +163,10 @@ function Cart() {
                 rounded-xl
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -183,34 +183,34 @@ function Cart() {
             </div>
           </div>
         </div>
-        <div class="main-section flex-1 p-6 bg-white-100">
-          <h1 class="font-bold text-gray-400 text-3xl mb-6">Shopping Cart</h1>
-          <div class="table-titles flex font-bold text-gray-400">
-            <h2 class="flex-grow">Product</h2>
-            <h2 class="w-48">Count</h2>
-            <h2 class="w-48">Total Cost</h2>
-            <span class="w-10"></span>
+        <div className="main-section flex-1 p-6 bg-white-100">
+          <h1 className="font-bold text-gray-400 text-3xl mb-6">Shopping Cart</h1>
+          <div className="table-titles flex font-bold text-gray-400">
+            <h2 className="flex-grow">Product</h2>
+            <h2 className="w-48">Count</h2>
+            <h2 className="w-48">Total Cost</h2>
+            <span className="w-10"></span>
           </div>
-          <div class="cart-items mt-5">
-            <div class="cart-item flex items-center pb-4 border-b">
-              <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
+          <div className="cart-items mt-5">
+            <div className="cart-item flex items-center pb-4 border-b">
+              <div className="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
                 <img
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                   src="https://www.bhphotovideo.com/images/images2500x2500/apple_myd92ll_a_13_3_macbook_pro_with_1604810.jpg"
                   alt="product_img"
                 />
               </div>
-              <div class="cart-item-details flex-grow">
-                <div class="cart-item-title font-bold text-sm text-gray-600">
+              <div className="cart-item-details flex-grow">
+                <div className="cart-item-title font-bold text-sm text-gray-600">
                   Apple MacBook Pro 13,3
                 </div>
-                <div class="cart-item-brand text-sm text-gray-400">Apple</div>
+                <div className="cart-item-brand text-sm text-gray-400">Apple</div>
               </div>
-              <div class="cart-item-counter w-48 flex items-center">
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+              <div className="cart-item-counter w-48 flex items-center">
+                <div className="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -223,11 +223,11 @@ function Cart() {
                     />
                   </svg>
                 </div>
-                <h4 class="text-gray-400 mx-3">1</h4>
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+                <h4 className="text-gray-400 mx-3">1</h4>
+                <div className="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -241,13 +241,13 @@ function Cart() {
                   </svg>
                 </div>
               </div>
-              <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+              <div className="cart-item-total-cost w-48 font-bold text-gray-400">
                 $1,499.50
               </div>
-              <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
+              <div className="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -264,25 +264,25 @@ function Cart() {
 
             {/* ------------------------------------------------------------ */}
 
-            <div class="cart-item flex items-center pb-4 border-b">
-              <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
+            <div className="cart-item flex items-center pb-4 border-b">
+              <div className="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
                 <img
-                  class="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                   src="https://www.bhphotovideo.com/images/images2500x2500/apple_myd92ll_a_13_3_macbook_pro_with_1604810.jpg"
                   alt="product_img"
                 />
               </div>
-              <div class="cart-item-details flex-grow">
-                <div class="cart-item-title font-bold text-sm text-gray-600">
+              <div className="cart-item-details flex-grow">
+                <div className="cart-item-title font-bold text-sm text-gray-600">
                   Apple MacBook Pro 13,3
                 </div>
-                <div class="cart-item-brand text-sm text-gray-400">Apple</div>
+                <div className="cart-item-brand text-sm text-gray-400">Apple</div>
               </div>
-              <div class="cart-item-counter w-48 flex items-center">
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+              <div className="cart-item-counter w-48 flex items-center">
+                <div className="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -295,11 +295,11 @@ function Cart() {
                     />
                   </svg>
                 </div>
-                <h4 class="text-gray-400 mx-3">1</h4>
-                <div class="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
+                <h4 className="text-gray-400 mx-3">1</h4>
+                <div className="cursor-pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-red-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -313,13 +313,13 @@ function Cart() {
                   </svg>
                 </div>
               </div>
-              <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+              <div className="cart-item-total-cost w-48 font-bold text-gray-400">
                 $1,499.50
               </div>
-              <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
+              <div className="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer hover:text-red-700">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -335,14 +335,14 @@ function Cart() {
             </div>
           </div>
 
-          <div class="complete-order flex justify-end mt-10">
-            <div class="total-cost mr-7">
-              <h2 class="text-gray-400">Total Cost</h2>
-              <div class="total-cost-number text-gray-600 font-bold text-3xl">
+          <div className="complete-order flex justify-end mt-10">
+            <div className="total-cost mr-7">
+              <h2 className="text-gray-400">Total Cost</h2>
+              <div className="total-cost-number text-gray-600 font-bold text-3xl">
                 $1700.00
               </div>
             </div>
-            <div class="complete-order-button w-56 flex items-center justify-center bg-yellow-500 rounded text-white cursor-pointer hover:bg-yellow-600">
+            <div className="complete-order-button w-56 flex items-center justify-center bg-yellow-500 rounded text-white cursor-pointer hover:bg-yellow-600">
               Complete Order
             </div>
           </div>

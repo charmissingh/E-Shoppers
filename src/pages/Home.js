@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../layouts/Header";
 import "./Home.css";
 
@@ -6,10 +7,10 @@ function Home() {
   return (
     <div>
       <Header />
-      
-      <div class="main h-screen flex">
+
+      <div className="main h-screen flex">
         <div
-          class="
+          className="
             hidden
             md:block
             main-sidebar
@@ -19,9 +20,9 @@ function Home() {
             p-6
           "
         >
-          <div class="sidebar-categories">
+          <div className="sidebar-categories">
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-yellow-500
                 cursor-pointer
@@ -33,10 +34,10 @@ function Home() {
                 rounded-lg
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -52,7 +53,7 @@ function Home() {
               <span>Categories</span>
             </div>
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -61,12 +62,12 @@ function Home() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Echo and Alexa</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -75,12 +76,12 @@ function Home() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Kindle</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -89,12 +90,12 @@ function Home() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Books</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -103,12 +104,12 @@ function Home() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Electronics</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -117,12 +118,12 @@ function Home() {
                 p-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Home and Garden</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -132,12 +133,12 @@ function Home() {
                 mb-2
               "
             >
-              <span class="w-8"></span>
+              <span className="w-8"></span>
               <span>Fashion</span>
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -149,10 +150,10 @@ function Home() {
                 mb-3
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -163,7 +164,7 @@ function Home() {
             </div>
 
             <div
-              class="
+              className="
                 sidebar-main-category
                 text-white
                 cursor-pointer
@@ -174,10 +175,10 @@ function Home() {
                 rounded-xl
               "
             >
-              <span class="w-8">
+              <span className="w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -194,10 +195,10 @@ function Home() {
             </div>
           </div>
         </div>
-        <div class="main-section flex-1 p-6 bg-gray-100">
-          <div class="main-section-banner h-44 rounded-lg flex items-end">
+        <div className="main-section flex-1 p-6 bg-gray-100">
+          <div className="main-section-banner h-44 rounded-lg flex items-end">
             <div
-              class="
+              className="
                 button
                 bg-white
                 w-36
@@ -210,13 +211,13 @@ function Home() {
                 cursor-pointer
               "
             >
-              <h4 class="text-bold text-yellow-500">Browse Products</h4>
+              <h4 className="text-bold text-yellow-500">Browse Products</h4>
             </div>
           </div>
           {/* Popular Categories */}
-          <div class="main-section-categories mt-10">
+          <div className="main-section-categories mt-10">
             <h1
-              class="
+              className="
                 popular-categories
                 font-bold
                 text-gray-700 text-2xl
@@ -226,7 +227,7 @@ function Home() {
             >
               Popular Categories
               <svg
-                class="h-6 w-6 text-yellow-400"
+                className="h-6 w-6 mt-1 ml-3 text-yellow-400"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -234,9 +235,9 @@ function Home() {
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             </h1>
-            <div class="categories mt-5 flex flex-wrap w-96 md:w-full">
+            <div className="categories mt-5 flex flex-wrap w-96 md:w-full">
               <div
-                class="
+                className="
                   icon-desktop
                   h-20
                   w-20
@@ -248,7 +249,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -263,7 +264,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-gift
                   h-20
                   w-20
@@ -276,7 +277,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -291,7 +292,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-phone
                   h-20
                   w-20
@@ -304,7 +305,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -319,7 +320,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-book
                   h-20
                   w-20
@@ -332,7 +333,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -347,7 +348,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-camera
                   h-20
                   w-20
@@ -360,7 +361,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -381,7 +382,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-home
                   h-20
                   w-20
@@ -394,7 +395,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -409,7 +410,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-music
                   h-20
                   w-20
@@ -422,7 +423,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -437,7 +438,7 @@ function Home() {
                 </svg>
               </div>
               <div
-                class="
+                className="
                   icon-bulb
                   h-20
                   w-20
@@ -450,7 +451,7 @@ function Home() {
                 "
               >
                 <svg
-                  class="h-12 w-12 text-gray-500"
+                  className="h-12 w-12 text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -466,11 +467,11 @@ function Home() {
               </div>
             </div>
           </div>
-          <div class="main-section-deals mt-10">
-            <h1 class="text-2xl font-bold text-gray-700 mb-5 flex">
+          <div className="main-section-deals mt-10">
+            <h1 className="text-2xl font-bold text-gray-700 mb-5 flex">
               Hot Deals
               <svg
-                class="h-7 w-7 text-yellow-500"
+                className="h-7 w-7 mt-1 ml-3 text-yellow-500"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -482,102 +483,91 @@ function Home() {
                 />
               </svg>
             </h1>
-            <div class="main-section-products flex">
-              <div class="main-product">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
-                    alt="product_img"
-                  />
+            <div className="main-section-products flex">
+              <div className="main-product">
+                <div className="product-image w-48 h-52 bg-white rounded-lg p-4">
+                  <Link to="/product">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                      alt="product_img"
+                    />
+                  </Link>
                 </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
+                <div className="product-name text-gray-700 font-bold mt-2 text-sm">
                   Nintendo Switch(2020)
                 </div>
-                <div class="product-make text-green-700 font-bold my-1">
+                <div className="product-make text-green-700 font-bold my-1">
                   Nintendo
                 </div>
-                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
-                <div class="product-price font-bold text-gray-700 text-lg">
-                  $359
-                </div>
-                <div
-                  class="
-                    add-to-cart
-                    flex
-                    items-center
-                    justify-center
-                    h-8
-                    w-28
-                    bg-yellow-500
-                    text-white
-                    rounded
-                    text-md
-                    cursor-pointer
-                    hover:bg-yellow-600
-                    mt-2
-                  "
-                >
-                  Add to cart
-                </div>
-              </div>
-
-              <div class="main-product ml-5">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
-                    alt="product_img"
-                  />
-                </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
-                  Nintendo Switch(2020)
-                </div>
-                <div class="product-make text-green-700 font-bold my-1">
-                  Nintendo
-                </div>
-                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
-                <div class="product-price font-bold text-gray-700 text-lg">
+                <div className="product-rating text-yellow-300">⭐⭐⭐⭐</div>
+                <div className="product-price font-bold text-gray-700 text-lg">
                   $359
                 </div>
               </div>
 
-              <div class="main-product ml-5">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
-                    alt="product_img"
-                  />
+              <div className="main-product ml-5">
+                <div className="product-image w-48 h-52 bg-white rounded-lg p-4">
+                  <Link to="/product">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                      alt="product_img"
+                    />
+                  </Link>
                 </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
+                <div className="product-name text-gray-700 font-bold mt-2 text-sm">
                   Nintendo Switch(2020)
                 </div>
-                <div class="product-make text-green-700 font-bold my-1">
+                <div className="product-make text-green-700 font-bold my-1">
                   Nintendo
                 </div>
-                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
-                <div class="product-price font-bold text-gray-700 text-lg">
+                <div className="product-rating text-yellow-300">⭐⭐⭐⭐</div>
+                <div className="product-price font-bold text-gray-700 text-lg">
                   $359
                 </div>
               </div>
 
-              <div class="main-product ml-5">
-                <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
-                  <img
-                    class="w-full h-full object-contain"
-                    src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
-                    alt="product_img"
-                  />
+              <div className="main-product ml-5">
+                <div className="product-image w-48 h-52 bg-white rounded-lg p-4">
+                  <Link to="/product">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                      alt="product_img"
+                    />
+                  </Link>
                 </div>
-                <div class="product-name text-gray-700 font-bold mt-2 text-sm">
+                <div className="product-name text-gray-700 font-bold mt-2 text-sm">
                   Nintendo Switch(2020)
                 </div>
-                <div class="product-make text-green-700 font-bold my-1">
+                <div className="product-make text-green-700 font-bold my-1">
                   Nintendo
                 </div>
-                <div class="product-rating text-yellow-300">⭐⭐⭐⭐</div>
-                <div class="product-price font-bold text-gray-700 text-lg">
+                <div className="product-rating text-yellow-300">⭐⭐⭐⭐</div>
+                <div className="product-price font-bold text-gray-700 text-lg">
+                  $359
+                </div>
+              </div>
+
+              <div className="main-product ml-5">
+                <div className="product-image w-48 h-52 bg-white rounded-lg p-4">
+                  <Link to="/product">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg"
+                      alt="product_img"
+                    />
+                  </Link>
+                </div>
+                <div className="product-name text-gray-700 font-bold mt-2 text-sm">
+                  Nintendo Switch(2020)
+                </div>
+                <div className="product-make text-green-700 font-bold my-1">
+                  Nintendo
+                </div>
+                <div className="product-rating text-yellow-300">⭐⭐⭐⭐</div>
+                <div className="product-price font-bold text-gray-700 text-lg">
                   $359
                 </div>
               </div>
