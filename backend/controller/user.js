@@ -16,7 +16,6 @@ export const userRegister = async (req, res) => {
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8),
     });
-
     const createdUser = await user.save();
     res.send({
       _id: createdUser._id,
@@ -24,6 +23,7 @@ export const userRegister = async (req, res) => {
       email: createdUser.email,
       isAdmin: createdUser.isAdmin,
       token: generateToken(createdUser),
+      message:'Account successfully created'
     });
   }
 };
