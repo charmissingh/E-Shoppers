@@ -183,6 +183,8 @@ function Cart() {
             </div>
           </div>
         </div>
+        
+        
         <div className="main-section flex-1 p-6 bg-white-100">
           <h1 className="font-bold text-gray-400 text-3xl mb-6">Shopping Cart</h1>
           <div className="table-titles flex font-bold text-gray-400">

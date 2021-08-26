@@ -9,17 +9,7 @@ function Home() {
       <Header />
 
       <div className="main h-screen flex">
-        <div
-          className="
-            hidden
-            md:block
-            main-sidebar
-            border-t-2 border-gray-700
-            w-1/5
-            bg-gray-900
-            p-6
-          "
-        >
+        <div className="main-sidebar border-t-2 border-gray-700 w-1/5 h-auto bg-gray-900 p-6">
           <div className="sidebar-categories">
             <div
               className="
@@ -195,6 +185,7 @@ function Home() {
             </div>
           </div>
         </div>
+
         <div className="main-section flex-1 p-6 bg-gray-100">
           <div className="main-section-banner h-44 rounded-lg flex items-end">
             <div

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assests/images/logo.png";
 
 function Header() {
   return (
@@ -9,8 +10,8 @@ function Header() {
           <div class="logo w-1/5 h-16 ml-10">
             <Link to="/">
               <img
-                class="w-28 h-16 object-contain"
-                src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
+                class="w-48 h-20 object-contain"
+                src={Logo}
                 alt="eshopper-logo"
               />
             </Link>
